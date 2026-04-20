@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدعم — نقدي</title>
+    <meta name="description" content="دعم نقدي. أسئلة شائعة عن امتثال زاتكا، احتساب الضريبة، الاشتراكات، وخصوصية البيانات.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+    <a href="index-ar.html" class="brand">
+        <span class="brand-badge">ن</span>
+        نقدي
+    </a>
+    <div class="lang-toggle" aria-label="اللغة">
+        <a href="support.html">English</a>
+        <a href="support-ar.html" class="active">العربية</a>
+    </div>
+</header>
+
+<main class="container">
+    <h1>الدعم</h1>
+    <p class="last-updated">نحن هنا لمساعدتك. أغلب الأسئلة إجاباتها تحت — وإن ما لقيت جوابك، راسلنا.</p>
+
+    <div class="faq-list">
+        <details class="faq-item">
+            <summary>هل نقدي متوافق فعلاً مع زاتكا؟</summary>
+            <p>نعم. كل فاتورة تنشئها تحتوي على رمز QR مشفّر بصيغة TLV Base64 المطلوبة من زاتكا للمرحلة الأولى (الإنشاء). الرمز يحتوي على اسم البائع، الرقم الضريبي، الطابع الزمني ISO-8601، الإجمالي، ومبلغ الضريبة — الخمس وسوم المحددة في النظام. المرحلة الثانية (التكامل مع فاتورة) لسه ما تنطبق على المستقلين تحت 7 مليون ريال إيرادات سنوياً، لكن مخرجات نقدي منظمة بطريقة تسمح بالانتقال للمرحلة الثانية بدون إعادة كتابة سجلاتك.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>كيف تُحتسب الضريبة؟</summary>
+            <p>نقدي يطبق نسبة ضريبة القيمة المضافة السعودية 15% على المبلغ الخاضع للضريبة (المجموع − أي خصم) باستخدام نوع <code>Decimal</code> من Apple مع تقريب مصرفي. كل المبالغ تُخزّن وتُعرض بخانتين عشريتين بالضبط. التقرير الربعي يجمع ضريبة المخرجات (من الفواتير) مع ضريبة المدخلات (من المصروفات) ليظهر صافي المستحق أو المسترد.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>وين تُخزَّن بياناتي؟</summary>
+            <p>على جهازك فقط. نقدي يستخدم SwiftData من Apple لتخزين الفواتير والعملاء والمصروفات وملف نشاطك محلياً. ما يتم رفع أي شيء لسيرفر نملكه. البيانات الوحيدة اللي تغادر جهازك هي (أ) تقارير أعطال مجهولة عبر Firebase Crashlytics، و(ب) حالة الاشتراك عبر Apple StoreKit. شاهد <a href="privacy-policy-ar.html">سياسة الخصوصية</a> للتفاصيل.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>إيش يصير لبياناتي لو حذفت التطبيق؟</summary>
+            <p>كل البيانات المحلية تُحذف نهائياً. ننصحك بتصدير فواتيرك ومصروفاتك PDF أو CSV قبل الحذف، خصوصاً إذا كنت في منتصف السنة وتحتاج السجلات لإقرارك الربعي.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>كيف ألغي اشتراكي؟</summary>
+            <p>الاشتراكات تُدار من Apple، مو من عندنا. افتح إعدادات iPhone ← اضغط Apple ID في الأعلى ← الاشتراكات ← نقدي ← إلغاء الاشتراك. Apple بتحتفظ لك بالوصول حتى نهاية فترة الفوترة. لطلبات الاسترداد، استخدم <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> — ما نقدر نرد المبالغ مباشرة.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>هل التجربة المجانية تتحول تلقائياً؟</summary>
+            <p>نعم. إذا بدأت التجربة المجانية 7 أيام على الخطة السنوية وما ألغيت خلال هذه الأيام، Apple تحسم السعر السنوي تلقائياً وتحولك لمشترك مدفوع. تقدر تلغي في أي وقت أثناء التجربة (شاهد الإجابة فوق) عشان ما يتم الخصم.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>هل أقدر استخدم نقدي لو ما كنت مسجّل في ضريبة القيمة المضافة؟</summary>
+            <p>نعم. في بيانات نشاطك، اجعل "مسجّل في ضريبة القيمة المضافة" إيقاف. نقدي بينشئ فواتير بدون تطبيق الضريبة وبدون عناوين ضريبية. رمز QR لسه يُنشأ (أفضل ممارسة) لكن الفاتورة نفسها تكون فاتورة غير خاضعة للضريبة.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>هل أقدر استخدم نفس الاشتراك على iPhone و Mac؟</summary>
+            <p>نعم. نقدي يدعم Universal Purchase — اشتراك واحد يغطي جميع أجهزتك Apple (iPhone و iPad و Mac عبر Catalyst). سجّل دخولك بنفس Apple ID على كل جهاز وحالة نقدي PRO تنتقل تلقائياً.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>النص العربي يطلع شكله مختلف بعد ما أكتبه. ليش؟</summary>
+            <p>نقدي يحوّل تلقائياً الأرقام العربية (٠-٩) إلى أرقام غربية (0-9) للاتساق في الفواتير — معظم الشركات السعودية تفضّل الأرقام الغربية في ملفات PDF للفواتير لسهولة استخدامها مع الأنظمة البنكية والمحاسبية. هذا تحويل متعمد؛ النص اللي تكتبه يبقى بالضبط كما كتبته.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>لقيت خلل أو عندي اقتراح. وش أسوي؟</summary>
+            <p>راسلنا على <a href="mailto:NaqdiAppFeedback@gmail.com">NaqdiAppFeedback@gmail.com</a>. اذكر إصدار iOS وإصدار نقدي (الإعدادات ← حول ← الإصدار). الصور تساعد. نقرأ كل رسالة ونرد خلال يومين عمل.</p>
+        </details>
+    </div>
+
+    <div class="support-cta">
+        <h3>لا زلت تحتاج مساعدة؟</h3>
+        <p>الدعم مباشرة من المطوّر. راسلنا وبتوصلك الردود قريب.</p>
+        <a href="mailto:NaqdiAppFeedback@gmail.com" class="email">
+            ✉️ NaqdiAppFeedback@gmail.com
+        </a>
+    </div>
+</main>
+
+<footer>
+    <a href="index-ar.html">الرئيسية</a>
+    <a href="support-ar.html">الدعم</a>
+    <a href="privacy-policy-ar.html">سياسة الخصوصية</a>
+    <a href="terms-of-use-ar.html">شروط الاستخدام</a>
+</footer>
+
+</body>
+</html>
