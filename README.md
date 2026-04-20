@@ -17,14 +17,14 @@ Once Pages is enabled:
 
 | Purpose | URL |
 |---|---|
-| Marketing (EN) | `https://<user>.github.io/naqdi-site/` |
-| Marketing (AR) | `https://<user>.github.io/naqdi-site/index-ar.html` |
-| Support (EN)   | `https://<user>.github.io/naqdi-site/support.html` |
-| Support (AR)   | `https://<user>.github.io/naqdi-site/support-ar.html` |
-| Privacy (EN)   | `https://<user>.github.io/naqdi-site/privacy-policy.html` |
-| Privacy (AR)   | `https://<user>.github.io/naqdi-site/privacy-policy-ar.html` |
-| Terms (EN)     | `https://<user>.github.io/naqdi-site/terms-of-use.html` |
-| Terms (AR)     | `https://<user>.github.io/naqdi-site/terms-of-use-ar.html` |
+| Marketing (EN) | `https://faisal666.github.io/naqdi-site/` |
+| Marketing (AR) | `https://faisal666.github.io/naqdi-site/index-ar.html` |
+| Support (EN)   | `https://faisal666.github.io/naqdi-site/support.html` |
+| Support (AR)   | `https://faisal666.github.io/naqdi-site/support-ar.html` |
+| Privacy (EN)   | `https://faisal666.github.io/naqdi-site/privacy-policy.html` |
+| Privacy (AR)   | `https://faisal666.github.io/naqdi-site/privacy-policy-ar.html` |
+| Terms (EN)     | `https://faisal666.github.io/naqdi-site/terms-of-use.html` |
+| Terms (AR)     | `https://faisal666.github.io/naqdi-site/terms-of-use-ar.html` |
 
 Paste those URLs into App Store Connect → App Information.
 
