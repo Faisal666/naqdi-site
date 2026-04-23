@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support — Naqdi</title>
-    <meta name="description" content="Get help with Naqdi. FAQs about ZATCA compliance, VAT calculation, subscriptions, and data privacy.">
+    <meta name="description" content="Get help with Naqdi. FAQs about invoicing, VAT calculation, subscriptions, and data privacy.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,8 +26,8 @@
 
     <div class="faq-list">
         <details class="faq-item">
-            <summary>Is Naqdi actually ZATCA-compliant?</summary>
-            <p>Yes. Every invoice you generate includes a QR code encoded in the TLV Base64 format ZATCA requires for Phase 1 (Generation). The QR contains the seller name, VAT number, ISO-8601 timestamp, total, and VAT amount — exactly the five tags specified by the regulation. Phase 2 (Integration with Fatoora) is not yet required for freelancers earning below SAR 7M per year, but Naqdi's output is structured so you can adopt Phase 2 without rewriting your records.</p>
+            <summary>What's on the invoice QR code?</summary>
+            <p>Every invoice includes a QR code that encodes the seller name, tax-registration number, timestamp, invoice total, and VAT amount — a standard machine-readable summary of the invoice. The QR is generated on your device and is part of the PDF. Naqdi is a self-service invoicing tool; you remain responsible for checking that your invoices meet whatever requirements apply to your business.</p>
         </details>
 
         <details class="faq-item">

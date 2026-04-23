@@ -36,12 +36,11 @@
         <li>Your signature (if you draw one for invoices)</li>
         <li>Your business logo</li>
     </ul>
-    <p>This data is stored locally using Apple's SwiftData framework and synced to <strong>your private iCloud database</strong> so your work follows you across your iPhone, iPad, and Mac signed in to the same Apple ID. Naqdi never sees or stores this data on our servers — iCloud encryption is end-to-end and managed by Apple.</p>
+    <p>This data is stored locally using Apple's SwiftData framework. It isn't uploaded to any server we control.</p>
 
     <h2>2. What leaves your device</h2>
     <ul>
-        <li><strong>Apple iCloud</strong>: When you're signed in to iCloud, Naqdi uses CloudKit to mirror your business data (profile, clients, invoices, expenses, receipts, signatures) to your private iCloud database. This keeps your devices in sync and gives you a backup if you delete the app or get a new device. Apple is the only party with access to this data; we cannot read or alter it.</li>
-        <li><strong>Apple StoreKit</strong>: When you subscribe, Apple processes the payment. We don't see your card details. Apple shares subscription status with the app so we know you're a premium user.</li>
+        <li><strong>Apple</strong>: When you subscribe, Apple processes the payment. We don't see your card details. Apple shares subscription status with the app so we know you're a premium user.</li>
         <li><strong>Firebase (Google)</strong>: Naqdi uses Firebase for:
             <ul>
                 <li><strong>Crashlytics</strong>: If the app crashes, an anonymous crash report is sent to Firebase so we can fix bugs. Includes device model, iOS version, and the stack trace. No business data.</li>
@@ -58,14 +57,13 @@
         <li>Photos other than what you explicitly attach to an invoice or expense.</li>
     </ul>
 
-    <h2>4. ZATCA e-invoices</h2>
-    <p>Invoices you generate include a ZATCA-compliant QR code with seller information, VAT number, total, and timestamp as required by Saudi tax regulation. The QR code is generated on your device — it isn't reported to ZATCA automatically. Phase 2 (Integration) is not yet required for freelancers below SAR 7M revenue.</p>
+    <h2>4. Invoice QR code</h2>
+    <p>Invoices you generate include a QR code with seller information, tax-registration number, total, and timestamp. The QR code is generated locally on your device and is never transmitted to any external authority — it's simply a machine-readable summary of the invoice. You remain responsible for verifying that your invoices meet any requirements that apply to your business.</p>
 
     <h2>5. Your rights</h2>
     <ul>
         <li>You can view, edit, and delete all your data inside the app at any time.</li>
-        <li>Deleting the app from one device removes the local copy. Your iCloud data stays safe and reappears when you reinstall or sign in on another device.</li>
-        <li>To permanently erase all Naqdi data from iCloud: iPhone Settings → your Apple ID → iCloud → Manage Account Storage → Naqdi → <strong>Delete Data from iCloud</strong>.</li>
+        <li>Deleting the app removes all local data permanently.</li>
         <li>For privacy questions or crash-report deletion requests, email us at: <a href="mailto:NaqdiAppFeedback@gmail.com">NaqdiAppFeedback@gmail.com</a></li>
     </ul>
 
