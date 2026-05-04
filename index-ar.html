@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نقدي — فوترة وضريبة للمستقلين السعوديين</title>
-    <meta name="description" content="نقدي تطبيق فوترة وتتبع مصروفات للمستقلين السعوديين. فواتير ثنائية اللغة مع رمز QR، احتساب تلقائي لضريبة القيمة المضافة، وملخصات ربعية — كل هذا في تطبيق واحد.">
-    <meta property="og:title" content="نقدي — فوترة وضريبة للمستقلين السعوديين">
-    <meta property="og:description" content="فوترة بسيطة وتتبع مصروفات وإدارة ضريبة القيمة المضافة للمستقلين السعوديين.">
+    <title>نقدي — فوترة وضريبة للمستقلين في السعودية</title>
+    <meta name="description" content="فواتير ضريبية عربي وإنجليزي مع رمز QR، حسبة تلقائية للضريبة، وملخصات ربعية مريحة. صُنع في الرياض للمستقلين. مجاني للبدء، 119.99 ر.س سنوياً لنسخة PRO.">
+    <meta property="og:title" content="نقدي — فوترة وضريبة، بدون قروشة.">
+    <meta property="og:description" content="فواتير عربي وإنجليزي مع رمز QR، الضريبة تنحسب من حالها، وملخصات ربعية واضحة. مجاناً، على App Store.">
+    <meta property="og:image" content="https://faisal666.github.io/naqdi-site/screenshots/ar/ar-01-dashboard.png">
+    <meta name="theme-color" content="#F4EFE4" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#101113" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,101 +19,358 @@
         <span class="brand-badge">ن</span>
         نقدي
     </a>
+    <nav class="primary-nav">
+        <a href="#how">كيف يشتغل</a>
+        <a href="#product">التطبيق</a>
+        <a href="#pricing">الباقات</a>
+        <a href="#faq">أسئلة شائعة</a>
+    </nav>
     <div class="lang-toggle" aria-label="اللغة">
-        <a href="index.html">English</a>
-        <a href="index-ar.html" class="active">العربية</a>
+        <a href="index.html">EN</a>
+        <a href="index-ar.html" class="active">ع</a>
     </div>
 </header>
 
 <main>
-    <section class="hero-marketing">
-        <span class="hero-chip">🇸🇦 مصمم للمستقلين السعوديين</span>
-        <h1>فوترة وضريبة،<br>بدون دوخة.</h1>
-        <p class="lead">أنشئ فواتير ضريبية ثنائية اللغة برمز QR في ثوانٍ، تتبع كل مصروف، واعرف إجمالياتك المالية بنظرة — كل هذا في تطبيق واحد بلغتك.</p>
-        <a href="https://apps.apple.com/sa/app/naqdi/id6762159386" class="hero-cta" aria-label="حمّل من App Store">
-            <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.182 0.016c.014.109.013.217.002.324-.04.376-.207.725-.502 1.06-.294.335-.723.625-1.174.728-.446.102-.779.059-1.002-.037-.14-.06-.17-.176-.092-.371.126-.316.327-.602.578-.843.25-.24.594-.464.997-.614.4-.15.796-.247 1.19-.247zm.39 3.103c.666.024 1.247.302 1.707.842-1.47.885-1.247 3 .2 3.705-.42 1.153-.984 2.158-1.89 3.217-.505.59-.899.89-1.299.907-.4.017-.675-.132-1.024-.302-.349-.17-.725-.34-1.175-.34-.45 0-.837.17-1.187.349-.35.18-.621.327-1.009.302-.417-.025-.826-.307-1.354-.864C3.515 9.88 2.82 8.16 2.82 6.5c0-1.99 1.253-3.03 2.493-3.048.53-.009 1.03.157 1.474.313.444.155.831.302 1.123.302.293 0 .68-.147 1.125-.302.444-.156.944-.322 1.474-.313z"/></svg>
-            حمّل من App Store
-        </a>
-    </section>
 
-    <section class="features">
-        <div class="container-wide">
-            <h2>كل ما يحتاجه المستقل السعودي</h2>
-            <p class="section-sub">نقدي يتعامل مع الفواتير والحسابات والسجلات، عشان تركّز على شغلك.</p>
+<!-- ── HERO ───────────────────────────────────────────────────── -->
+<section class="hero">
+    <div>
+        <span class="section-tag">الفوترة، بشكل جديد</span>
+        <h1 class="hero__display">
+            <span class="word">فواتير</span>
+            <span class="word"><em>تجمّلك.</em></span>
+            <span class="word">للمستقلين</span>
+            <span class="word">اللي</span>
+            <span class="word">ما</span>
+            <span class="word">يرضون</span>
+            <span class="word">بالعادي.</span>
+        </h1>
+        <p class="hero__lead">فاتورة ضريبية عربي وإنجليزي في أقل من دقيقة. الضريبة تنحسب من حالها، وملخصات ربعية واضحة. صُنع في الرياض للمستقلين اللي يبغون ينجزون شغلهم بدون قروشة.</p>
+        <div class="hero__cta">
+            <a href="https://apps.apple.com/sa/app/naqdi/id6762159386" class="btn" aria-label="حمّل من App Store">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.182 0.016c.014.109.013.217.002.324-.04.376-.207.725-.502 1.06-.294.335-.723.625-1.174.728-.446.102-.779.059-1.002-.037-.14-.06-.17-.176-.092-.371.126-.316.327-.602.578-.843.25-.24.594-.464.997-.614.4-.15.796-.247 1.19-.247zm.39 3.103c.666.024 1.247.302 1.707.842-1.47.885-1.247 3 .2 3.705-.42 1.153-.984 2.158-1.89 3.217-.505.59-.899.89-1.299.907-.4.017-.675-.132-1.024-.302-.349-.17-.725-.34-1.175-.34-.45 0-.837.17-1.187.349-.35.18-.621.327-1.009.302-.417-.025-.826-.307-1.354-.864C3.515 9.88 2.82 8.16 2.82 6.5c0-1.99 1.253-3.03 2.493-3.048.53-.009 1.03.157 1.474.313.444.155.831.302 1.123.302.293 0 .68-.147 1.125-.302.444-.156.944-.322 1.474-.313z"/></svg>
+                حمّل من App Store
+            </a>
+            <a href="#ledger" class="btn btn--ghost">جرّب الحسبة ↓</a>
+        </div>
+    </div>
 
-            <div class="feature-grid">
-                <div class="feature">
-                    <span class="icon">📄</span>
-                    <h3>فواتير احترافية</h3>
-                    <p>فواتير ضريبية ثنائية اللغة (عربي + إنجليزي) مع رمز QR مضمّن وتصميم نظيف احترافي.</p>
-                </div>
-                <div class="feature">
-                    <span class="icon">💸</span>
-                    <h3>ضريبة محسوبة تلقائياً</h3>
-                    <p>احتساب تلقائي لضريبة 15% على كل فاتورة، مع ملخصات ربعية تراجعها مع محاسبك.</p>
-                </div>
-                <div class="feature">
-                    <span class="icon">🌐</span>
-                    <h3>ثنائي اللغة بالتصميم</h3>
-                    <p>كل فاتورة تعرض العناوين بالعربي والإنجليزي جنب بعض — جاهزة لعملائك في السعودية وخارجها.</p>
-                </div>
-                <div class="feature">
-                    <span class="icon">📸</span>
-                    <h3>تتبع المصروفات</h3>
-                    <p>ثماني فئات مع أيقونات ملونة، إرفاق صور الإيصالات، واحتساب تلقائي لضريبة المدخلات.</p>
-                </div>
-                <div class="feature">
-                    <span class="icon">🎨</span>
-                    <h3>قوالب احترافية</h3>
-                    <p>ستة ألوان للقوالب، توقيعات، خانات الاعتماد، شروط وأحكام، وتذييلات مخصصة لأعمال الشركات.</p>
-                </div>
-                <div class="feature">
-                    <span class="icon">🔒</span>
-                    <h3>الخصوصية أولاً</h3>
-                    <p>بياناتك تبقى على جهازك. بدون حسابات أو كلمات مرور أو سيرفرات. صدّر متى شئت PDF أو CSV.</p>
-                </div>
+    <aside class="hero__receipt" aria-label="نموذج فاتورة ضريبية">
+        <div class="receipt__head">
+            <div class="receipt__brand">استوديو&nbsp;نقدي</div>
+            <div class="receipt__no">
+                فاتورة ضريبية
+                <strong>NQ-2026-0042</strong>
             </div>
         </div>
-    </section>
-
-    <section class="pricing">
-        <div class="container-wide">
-            <div class="pricing-card">
-                <h3>مجاناً</h3>
-                <div class="price">0 ر.س <small>/ للأبد</small></div>
-                <ul>
-                    <li>حتى 3 عملاء</li>
-                    <li>10 فواتير في الشهر</li>
-                    <li>رمز QR على كل فاتورة</li>
-                    <li>تتبع المصروفات</li>
-                    <li>ملخص الضريبة الربعي</li>
-                </ul>
+        <dl class="receipt__meta">
+            <dt>التاريخ</dt><dd>2026-04-22 · 14:30</dd>
+            <dt>العميل</dt><dd>شركة أورورا</dd>
+            <dt>الرقم الضريبي</dt><dd>3001234567 89012</dd>
+        </dl>
+        <div class="receipt__rows">
+            <div class="receipt__row">
+                <span>هوية بصرية</span><span>3,200.00</span>
             </div>
-            <div class="pricing-card featured">
-                <h3>نقدي PRO</h3>
-                <div class="price">119.99 ر.س <small>/ سنوياً</small></div>
-                <ul>
-                    <li>عملاء وفواتير بلا حدود</li>
-                    <li>6 ألوان للقوالب</li>
-                    <li>توقيعات، اعتمادات، شروط وأحكام</li>
-                    <li>تقارير أرباح وخسائر وضريبة سنوية</li>
-                    <li>تصدير CSV و PDF</li>
-                    <li>تجربة مجانية 7 أيام — ألغِ في أي وقت</li>
-                </ul>
+            <div class="receipt__row qty">
+                <span>1 × 3,200.00</span><span>ر.س</span>
+            </div>
+            <div class="receipt__row">
+                <span>خطوط · 6 أوزان</span><span>1,400.00</span>
+            </div>
+            <div class="receipt__row qty">
+                <span>1 × 1,400.00</span><span>ر.س</span>
             </div>
         </div>
-    </section>
+        <hr class="receipt__rule">
+        <div class="receipt__totals">
+            <div class="receipt__row"><span>المجموع</span><span>4,600.00</span></div>
+            <div class="receipt__row"><span>الضريبة · 15%</span><span>690.00</span></div>
+            <div class="receipt__row grand"><span>الإجمالي · ر.س</span><span>5,290.00</span></div>
+        </div>
+        <div class="receipt__qr">
+            <svg width="68" height="68" viewBox="0 0 25 25" aria-hidden="true">
+                <rect width="25" height="25" fill="transparent"/>
+                <g fill="currentColor" style="color:var(--ink)">
+                    <path d="M0,0 h7 v7 h-7 z M1,1 v5 h5 v-5 z M2,2 h3 v3 h-3 z"/>
+                    <path d="M18,0 h7 v7 h-7 z M19,1 v5 h5 v-5 z M20,2 h3 v3 h-3 z"/>
+                    <path d="M0,18 h7 v7 h-7 z M1,19 v5 h5 v-5 z M2,20 h3 v3 h-3 z"/>
+                    <path d="M9,1h1v1h-1zM12,1h2v1h-2zM15,1h1v1h-1zM10,3h1v1h-1zM13,3h1v1h-1zM16,3h1v1h-1zM9,5h2v1h-2zM12,5h1v1h-1zM14,5h2v1h-2zM10,7h1v1h-1zM12,7h1v1h-1zM15,7h2v1h-2zM1,9h2v1h-2zM4,9h1v1h-1zM7,9h1v1h-1zM10,9h2v1h-2zM13,9h1v1h-1zM16,9h2v1h-2zM20,9h1v1h-1zM23,9h1v1h-1zM2,10h1v1h-1zM5,10h2v1h-2zM9,10h1v1h-1zM12,10h1v1h-1zM15,10h1v1h-1zM18,10h1v1h-1zM21,10h2v1h-2zM1,12h1v1h-1zM4,12h2v1h-2zM8,12h1v1h-1zM11,12h2v1h-2zM15,12h2v1h-2zM18,12h1v1h-1zM22,12h1v1h-1zM2,14h2v1h-2zM6,14h1v1h-1zM9,14h1v1h-1zM12,14h1v1h-1zM14,14h1v1h-1zM17,14h2v1h-2zM21,14h1v1h-1zM23,14h1v1h-1zM1,16h1v1h-1zM4,16h1v1h-1zM7,16h2v1h-2zM10,16h1v1h-1zM13,16h2v1h-2zM16,16h1v1h-1zM19,16h2v1h-2zM22,16h1v1h-1zM9,18h1v1h-1zM11,18h2v1h-2zM14,18h1v1h-1zM17,18h2v1h-2zM21,18h1v1h-1zM10,20h2v1h-2zM13,20h1v1h-1zM16,20h1v1h-1zM18,20h2v1h-2zM23,20h1v1h-1zM9,22h1v1h-1zM12,22h2v1h-2zM15,22h2v1h-2zM19,22h1v1h-1zM21,22h2v1h-2zM10,24h1v1h-1zM13,24h2v1h-2zM17,24h1v1h-1zM20,24h2v1h-2z"/>
+                </g>
+            </svg>
+            <div>
+                <span class="receipt__qr-tag">رمز QR جاهز للقراءة</span>
+                يشمل بيانات البائع، الرقم الضريبي،<br>الإجمالي والضريبة — يتولّد في جهازك.
+            </div>
+        </div>
+    </aside>
+</section>
+
+<!-- ── TICKER ─────────────────────────────────────────────────── -->
+<section class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+        <span><span class="dot"></span> ضريبة القيمة المضافة · 15%</span>
+        <span><span class="dot"></span> رمز QR على كل فاتورة</span>
+        <span><span class="dot"></span> بدون تسجيل ولا حسابات</span>
+        <span><span class="dot"></span> تجربة 7 أيام مجاناً</span>
+        <span><span class="dot"></span> آيفون · آيباد · ماك</span>
+        <span><span class="dot"></span> العربية أولاً</span>
+        <span><span class="dot"></span> صُنع في الرياض</span>
+        <span><span class="dot"></span> ضريبة القيمة المضافة · 15%</span>
+        <span><span class="dot"></span> رمز QR على كل فاتورة</span>
+        <span><span class="dot"></span> بدون تسجيل ولا حسابات</span>
+        <span><span class="dot"></span> تجربة 7 أيام مجاناً</span>
+        <span><span class="dot"></span> آيفون · آيباد · ماك</span>
+        <span><span class="dot"></span> العربية أولاً</span>
+        <span><span class="dot"></span> صُنع في الرياض</span>
+    </div>
+</section>
+
+<!-- ── HOW IT WORKS ───────────────────────────────────────────── -->
+<section id="how" class="steps">
+    <div class="wrap">
+        <span class="section-tag">§ 02 &nbsp;·&nbsp; طريقة العمل</span>
+        <h2 class="section-title">من الصفر إلى فاتورة مدفوعة، في ثلاث&nbsp;خطوات بسيطة.</h2>
+        <p class="section-sub">بدون شروحات ولا إعدادات معقدة. التطبيق مبني على فكرة واضحة: فوتر، تتبع، واحفظ ملفاتك.</p>
+    </div>
+    <div class="wrap">
+        <div class="steps__grid">
+            <article class="step">
+                <span class="step__num">01</span>
+                <h3 class="step__title">أضف عميلك.</h3>
+                <p class="step__body">اسم، رقم ضريبي، إيميل — وبس. نقدي بيحفظ الباقي. وسواء كنت تتعامل مع شركات أو أفراد، الزر واحد والعملية سهلة.</p>
+                <span class="step__chip">حقول بلغتين</span>
+            </article>
+            <article class="step">
+                <span class="step__num">02</span>
+                <h3 class="step__title">نزّل الفاتورة.</h3>
+                <p class="step__body">اكتب البنود، وبتشوف الضريبة والإجمالي ورمز QR تتحدث قدامك. اختر لونك، حط توقيعك، وشاركها مباشرة. بهالسهولة.</p>
+                <span class="step__chip">PDF · QR · توقيع</span>
+            </article>
+            <article class="step">
+                <span class="step__num">03</span>
+                <h3 class="step__title">تابع الباقي.</h3>
+                <p class="step__body">صوّر إيصالاتك، تابع حسبة الضريبة الربعية من الشاشة الرئيسية، وصدّرها لمحاسبك متى ما طلبها. كل شيء محفوظ بجهازك ويتزامن بهدوء عبر iCloud.</p>
+                <span class="step__chip">iCloud · CSV · تقرير ربعي</span>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ── PRODUCT / SCREENSHOTS ──────────────────────────────────── -->
+<section id="product" class="spread">
+    <div class="wrap">
+        <span class="section-tag">§ 03 &nbsp;·&nbsp; التطبيق</span>
+        <h2 class="section-title">تطبيق بسيط يحترم وقتك.</h2>
+        <p class="section-sub">ست شاشات، بدون حسابات، وبدون قروشة. اسحب وتصفح.</p>
+    </div>
+    <div class="spread__strip" aria-label="لقطات الشاشة">
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/ar/ar-01-dashboard.png" alt="الرئيسية: إيرادات الشهر والنشاط الأخير" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">01</span><span class="shot__name">الرئيسية</span></figcaption>
+        </figure>
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/ar/ar-02-invoices-list.png" alt="قائمة الفواتير مع فلاتر الحالة" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">02</span><span class="shot__name">الفواتير</span></figcaption>
+        </figure>
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/ar/ar-03-invoice-detail.png" alt="تفاصيل الفاتورة" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">03</span><span class="shot__name">تفاصيل الفاتورة</span></figcaption>
+        </figure>
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/ar/ar-04-expenses.png" alt="تتبع المصروفات حسب الفئة" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">04</span><span class="shot__name">المصروفات</span></figcaption>
+        </figure>
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/ar/ar-05-clients.png" alt="قائمة العملاء" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">05</span><span class="shot__name">العملاء</span></figcaption>
+        </figure>
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/ar/ar-06-vat-report.png" alt="تقرير الضريبة الربعي" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">06</span><span class="shot__name">تقرير الضريبة</span></figcaption>
+        </figure>
+    </div>
+    <p class="spread__hint">⟵ &nbsp;اسحب&nbsp;للتصفح&nbsp; ⟶</p>
+</section>
+
+<!-- ── LIVE LEDGER ────────────────────────────────────────────── -->
+<section id="ledger" class="ledger">
+    <div class="wrap">
+        <span class="section-tag">§ 04 &nbsp;·&nbsp; جرّب الحسبة</span>
+        <h2 class="section-title">اكتب المبلغ.&nbsp;وخل&nbsp;الحسبة&nbsp;على&nbsp;نقدي.</h2>
+        <p class="section-sub">ضريبة 15%، وحسبة دقيقة وتلقائية — نفس اللي يستخدمها التطبيق في فواتيرك.</p>
+
+        <div class="ledger__panel" role="group" aria-label="حاسبة الضريبة">
+            <div class="ledger__input">
+                <div class="ledger__label">المبلغ الخاضع للضريبة</div>
+                <label class="ledger__field">
+                    <span class="currency">ر.س</span>
+                    <input id="ledger-input" type="number" inputmode="decimal" min="0" step="0.01" value="4600" aria-label="المبلغ بالريال">
+                </label>
+                <p class="ledger__hint">مثلاً: مشروع تصميم، شهر استشارات، أو دفعة مقطوعة.</p>
+            </div>
+            <div class="ledger__output" aria-live="polite">
+                <div class="ledger__line"><span>المجموع</span><span class="val" data-out="subtotal">4,600.00</span></div>
+                <div class="ledger__line is-pulse"><span>الضريبة · 15%</span><span class="val" data-out="vat">690.00</span></div>
+                <div class="ledger__line total"><span>الإجمالي</span><span class="val" data-out="total">5,290.00</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── PRICING ────────────────────────────────────────────────── -->
+<section id="pricing" class="pricing">
+    <div class="wrap">
+        <span class="section-tag">§ 05 &nbsp;·&nbsp; الباقات</span>
+        <h2 class="section-title">باقتين. بدون مفاجآت.</h2>
+        <p class="section-sub">ابدأ مجاناً للأبد. ولما تحس إنك تحتاج أكثر، الترقية بتعوّض قيمتها من أول فاتورة.</p>
+
+        <div class="pricing__grid">
+            <article class="plan">
+                <header class="plan__head">
+                    <h3 class="plan__name">مجاني</h3>
+                    <span class="plan__tag">للأبد</span>
+                </header>
+                <div class="plan__price">
+                    <span class="ccy">ر.س</span><span class="num">0</span><span class="per">/ للأبد</span>
+                </div>
+                <p class="plan__sub">بداية بسيطة وبدون التزام.</p>
+                <ul class="plan__items">
+                    <li><span class="qty">×3</span><span>عملاء</span><span class="price">شامل</span></li>
+                    <li><span class="qty">×10</span><span>فواتير بالشهر</span><span class="price">شامل</span></li>
+                    <li><span class="qty">∞</span><span>PDF عربي وإنجليزي + QR</span><span class="price">شامل</span></li>
+                    <li><span class="qty">∞</span><span>تتبع للمصروفات</span><span class="price">شامل</span></li>
+                    <li><span class="qty">∞</span><span>ملخص الضريبة الربعي</span><span class="price">شامل</span></li>
+                </ul>
+                <a class="btn btn--ghost" href="https://apps.apple.com/sa/app/naqdi/id6762159386">حمّل التطبيق</a>
+            </article>
+
+            <article class="plan plan--pro">
+                <header class="plan__head">
+                    <h3 class="plan__name">نقدي PRO</h3>
+                    <span class="plan__tag">7 أيام مجاناً</span>
+                </header>
+                <div class="plan__price">
+                    <span class="ccy">ر.س</span><span class="num">119</span><span class="per">.99 / سنة</span>
+                </div>
+                <p class="plan__sub">أقل من 10 ريال شهرياً.</p>
+                <ul class="plan__items">
+                    <li><span class="qty">∞</span><span>عملاء وفواتير</span><span class="price">بلا حدود</span></li>
+                    <li><span class="qty">×6</span><span>ألوان للفواتير</span><span class="price">PRO</span></li>
+                    <li><span class="qty">∞</span><span>توقيعات وشروط واعتمادات</span><span class="price">PRO</span></li>
+                    <li><span class="qty">∞</span><span>أرباح وخسائر وملخص سنوي</span><span class="price">PRO</span></li>
+                    <li><span class="qty">∞</span><span>تصدير ملفات للمحاسب</span><span class="price">PRO</span></li>
+                    <li><span class="qty">∞</span><span>مزامنة iCloud بين أجهزتك</span><span class="price">PRO</span></li>
+                </ul>
+                <a class="btn btn--teal" href="https://apps.apple.com/sa/app/naqdi/id6762159386">ابدأ تجربة 7 أيام</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ── FAQ ────────────────────────────────────────────────────── -->
+<section id="faq" class="faq">
+    <div class="wrap">
+        <span class="section-tag">§ 06 &nbsp;·&nbsp; أسئلة شائعة</span>
+        <h2 class="section-title">إجابات واضحة.</h2>
+
+        <div class="faq__list">
+            <details class="faq__item">
+                <summary><span class="num">01</span><span>هل فواتيري تشمل رمز QR؟</span><span class="plus">+</span></summary>
+                <p>إي نعم — كل فاتورة تصدرها فيها رمز QR شامل لاسم البائع، رقمك الضريبي، التاريخ، والإجمالي ومبلغ الضريبة. الرمز بنفس الصيغة المتبعة في الفواتير السعودية، ويتقرأ بأي تطبيق فواتير.</p>
+            </details>
+            <details class="faq__item">
+                <summary><span class="num">02</span><span>وين بياناتي؟</span><span class="plus">+</span></summary>
+                <p>في جهازك بس، وتقدر تفعل المزامنة على حسابك في iCloud. نقدي ما يستخدم سيرفرات خارجية، ولا فيه حسابات، وما نقدر نشوف فواتيرك أبداً. البيانات الوحيدة اللي توصلنا هي تقارير أعطال مجهولة عشان نصلّح الأخطاء ونحسّن التطبيق.</p>
+            </details>
+            <details class="faq__item">
+                <summary><span class="num">03</span><span>وش لو ماني مسجّل في الضريبة؟</span><span class="plus">+</span></summary>
+                <p>طفّ خيار "مسجّل ضريبياً" من ملفك التجاري. الفواتير بتنزل بدون أي ضريبة أو إشارة لها، وكل شيء ثاني من عملاء ومصروفات وسجلات بيشتغل معك طبيعي.</p>
+            </details>
+            <details class="faq__item">
+                <summary><span class="num">04</span><span>آيفون، آيباد، وماك؟</span><span class="plus">+</span></summary>
+                <p>شراء واحد يكفيك للثلاثة. iCloud بيخلي فواتيرك محدّثة في كل أجهزتك اللي بنفس الحساب. ونسخة الماك مصممة خصيصاً لتكون تطبيق ماك حقيقي، مو مجرد تطبيق جوال مكبّر.</p>
+            </details>
+            <details class="faq__item">
+                <summary><span class="num">05</span><span>أقدر ألغي في أي وقت؟</span><span class="plus">+</span></summary>
+                <p>أكيد. اشتراكك يدار من خلال أبل — الإعدادات → اسمك → الاشتراكات → نقدي. وراح يستمر وصولك للتطبيق لنهاية الفترة اللي دفعتها. وتقدر تصدّر كل ملفاتك PDF أو CSV بأي وقت.</p>
+            </details>
+            <details class="faq__item">
+                <summary><span class="num">06</span><span>ليش التصميم يشبه الورق؟</span><span class="plus">+</span></summary>
+                <p>لأن الفاتورة في النهاية هي مستند. وحتى لو كانت في جوالك، لازم تعكس احترافيتك وترتيبك. المستقل السعودي يستاهل تطبيق يبيض الوجه قدام عملائه، مو مجرد جدول إكسل ممل.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ── CODA ───────────────────────────────────────────────────── -->
+<section class="coda">
+    <h2>فاتورتك الجاية، <em>أرتب</em> فاتورة بتسويها.</h2>
+    <p>مجاناً على الـ App Store. وتقدر ترقّي لـ PRO متى ما احتجت مساحة أكبر.</p>
+    <a href="https://apps.apple.com/sa/app/naqdi/id6762159386" class="btn btn--teal">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.182 0.016c.014.109.013.217.002.324-.04.376-.207.725-.502 1.06-.294.335-.723.625-1.174.728-.446.102-.779.059-1.002-.037-.14-.06-.17-.176-.092-.371.126-.316.327-.602.578-.843.25-.24.594-.464.997-.614.4-.15.796-.247 1.19-.247zm.39 3.103c.666.024 1.247.302 1.707.842-1.47.885-1.247 3 .2 3.705-.42 1.153-.984 2.158-1.89 3.217-.505.59-.899.89-1.299.907-.4.017-.675-.132-1.024-.302-.349-.17-.725-.34-1.175-.34-.45 0-.837.17-1.187.349-.35.18-.621.327-1.009.302-.417-.025-.826-.307-1.354-.864C3.515 9.88 2.82 8.16 2.82 6.5c0-1.99 1.253-3.03 2.493-3.048.53-.009 1.03.157 1.474.313.444.155.831.302 1.123.302.293 0 .68-.147 1.125-.302.444-.156.944-.322 1.474-.313z"/></svg>
+        حمّل نقدي
+    </a>
+</section>
+
 </main>
 
-<footer>
-    <a href="support-ar.html">الدعم</a>
-    <a href="privacy-policy-ar.html">سياسة الخصوصية</a>
-    <a href="terms-of-use-ar.html">شروط الاستخدام</a>
-    <a href="mailto:NaqdiAppFeedback@gmail.com">تواصل</a>
-    <div style="margin-top: 20px; font-size: 12px;">
-        © 2026 نقدي. مصنوع للمستقلين السعوديين، في السعودية. 🇸🇦
+<footer class="site">
+    <div class="row">
+        <div class="mark">نقدي · Naqdi</div>
+        <nav>
+            <a href="support-ar.html">الدعم</a>
+            <a href="privacy-policy-ar.html">الخصوصية</a>
+            <a href="terms-of-use-ar.html">الشروط</a>
+            <a href="mailto:NaqdiAppFeedback@gmail.com">تواصل</a>
+            <a href="index.html">English</a>
+        </nav>
+    </div>
+    <div class="fine">
+        <span>© 2026 نقدي · صُنع في السعودية</span>
+        <span>الإصدار 1.2 · أبريل 2026</span>
     </div>
 </footer>
+
+<script>
+(function () {
+    const input = document.getElementById('ledger-input');
+    if (!input) return;
+    const fmt = new Intl.NumberFormat('en-US', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    });
+    const out = {
+        subtotal: document.querySelector('[data-out="subtotal"]'),
+        vat:      document.querySelector('[data-out="vat"]'),
+        total:    document.querySelector('[data-out="total"]')
+    };
+    let prev = '';
+    function recalc() {
+        const v = parseFloat(input.value);
+        const sub = isFinite(v) && v > 0 ? v : 0;
+        const vat = sub * 0.15;
+        const tot = sub + vat;
+        const next = fmt.format(tot);
+        out.subtotal.textContent = fmt.format(sub);
+        out.vat.textContent      = fmt.format(vat);
+        out.total.textContent    = next;
+        if (next !== prev) {
+            const totalLine = out.total.parentElement;
+            totalLine.style.transition = 'none';
+            totalLine.style.color = 'var(--teal)';
+            requestAnimationFrame(() => {
+                totalLine.style.transition = 'color .8s ease';
+                totalLine.style.color = '';
+            });
+            prev = next;
+        }
+    }
+    input.addEventListener('input', recalc);
+    recalc();
+})();
+</script>
 
 </body>
 </html>

@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naqdi — Invoicing & VAT for Saudi Freelancers</title>
-    <meta name="description" content="Naqdi is a dead-simple invoicing and expense-tracking app for Saudi freelancers. Beautiful bilingual invoices with QR codes, automatic VAT calculation, and quarterly summaries — all in one Arabic-first app.">
-    <meta property="og:title" content="Naqdi — Invoicing & VAT for Saudi Freelancers">
-    <meta property="og:description" content="Dead-simple invoicing, expense tracking, and VAT management built for Saudi freelancers.">
+    <title>Naqdi — Invoicing & VAT for freelancers</title>
+    <meta name="description" content="Beautiful bilingual tax invoices with QR codes, automatic VAT math, and quarterly summaries. Built in Riyadh for freelancers. Free to start, SAR 119.99/year for PRO.">
+    <meta property="og:title" content="Naqdi — Invoicing & VAT, without the headache.">
+    <meta property="og:description" content="Bilingual invoices with QR codes, automatic 15% VAT, and quarterly summaries. Free on the App Store.">
+    <meta property="og:image" content="https://faisal666.github.io/naqdi-site/screenshots/en/en-01-dashboard.png">
+    <meta name="theme-color" content="#F4EFE4" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#101113" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,101 +19,359 @@
         <span class="brand-badge">ن</span>
         Naqdi
     </a>
+    <nav class="primary-nav">
+        <a href="#how">How it works</a>
+        <a href="#product">The app</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+    </nav>
     <div class="lang-toggle" aria-label="Language">
-        <a href="index.html" class="active">English</a>
-        <a href="index-ar.html">العربية</a>
+        <a href="index.html" class="active">EN</a>
+        <a href="index-ar.html">ع</a>
     </div>
 </header>
 
 <main>
-    <section class="hero-marketing">
-        <span class="hero-chip">🇸🇦 Built for Saudi Freelancers</span>
-        <h1>Invoicing & VAT,<br>without the headache.</h1>
-        <p class="lead">Create beautiful bilingual tax invoices with QR codes in seconds, track every expense, and see your VAT totals at a glance — all in one Arabic-first app.</p>
-        <a href="https://apps.apple.com/sa/app/naqdi/id6762159386" class="hero-cta" aria-label="Download on the App Store">
-            <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.182 0.016c.014.109.013.217.002.324-.04.376-.207.725-.502 1.06-.294.335-.723.625-1.174.728-.446.102-.779.059-1.002-.037-.14-.06-.17-.176-.092-.371.126-.316.327-.602.578-.843.25-.24.594-.464.997-.614.4-.15.796-.247 1.19-.247zm.39 3.103c.666.024 1.247.302 1.707.842-1.47.885-1.247 3 .2 3.705-.42 1.153-.984 2.158-1.89 3.217-.505.59-.899.89-1.299.907-.4.017-.675-.132-1.024-.302-.349-.17-.725-.34-1.175-.34-.45 0-.837.17-1.187.349-.35.18-.621.327-1.009.302-.417-.025-.826-.307-1.354-.864C3.515 9.88 2.82 8.16 2.82 6.5c0-1.99 1.253-3.03 2.493-3.048.53-.009 1.03.157 1.474.313.444.155.831.302 1.123.302.293 0 .68-.147 1.125-.302.444-.156.944-.322 1.474-.313z"/></svg>
-            Download on the App Store
-        </a>
-    </section>
 
-    <section class="features">
-        <div class="container-wide">
-            <h2>Everything a Saudi freelancer needs</h2>
-            <p class="section-sub">Naqdi handles the invoices, calculations, and records so you can focus on your work.</p>
+<!-- ── HERO ───────────────────────────────────────────────────── -->
+<section class="hero">
+    <div>
+        <span class="section-tag">Fig. 01 &nbsp;·&nbsp; Invoicing, reimagined</span>
+        <h1 class="hero__display">
+            <span class="word">Invoicing</span>
+            <span class="word">for</span>
+            <span class="word">the</span>
+            <span class="word"><em>fiercely</em></span>
+            <span class="word">independent.</span>
+        </h1>
+        <p class="hero__lead">A bilingual tax invoice in under a minute. Automatic VAT math. Clear quarterly summaries. Built in Riyadh for freelancers who just want to get work done.</p>
+        <div class="hero__cta">
+            <a href="https://apps.apple.com/sa/app/naqdi/id6762159386" class="btn" aria-label="Download on the App Store">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.182 0.016c.014.109.013.217.002.324-.04.376-.207.725-.502 1.06-.294.335-.723.625-1.174.728-.446.102-.779.059-1.002-.037-.14-.06-.17-.176-.092-.371.126-.316.327-.602.578-.843.25-.24.594-.464.997-.614.4-.15.796-.247 1.19-.247zm.39 3.103c.666.024 1.247.302 1.707.842-1.47.885-1.247 3 .2 3.705-.42 1.153-.984 2.158-1.89 3.217-.505.59-.899.89-1.299.907-.4.017-.675-.132-1.024-.302-.349-.17-.725-.34-1.175-.34-.45 0-.837.17-1.187.349-.35.18-.621.327-1.009.302-.417-.025-.826-.307-1.354-.864C3.515 9.88 2.82 8.16 2.82 6.5c0-1.99 1.253-3.03 2.493-3.048.53-.009 1.03.157 1.474.313.444.155.831.302 1.123.302.293 0 .68-.147 1.125-.302.444-.156.944-.322 1.474-.313z"/></svg>
+                Download on the App Store
+            </a>
+            <a href="#ledger" class="btn btn--ghost">Try the math ↓</a>
+        </div>
+    </div>
 
-            <div class="feature-grid">
-                <div class="feature">
-                    <span class="icon">📄</span>
-                    <h3>Beautiful invoices</h3>
-                    <p>Bilingual (Arabic + English) tax invoices with an embedded QR code and a clean professional layout.</p>
-                </div>
-                <div class="feature">
-                    <span class="icon">💸</span>
-                    <h3>VAT at a glance</h3>
-                    <p>Automatic 15% VAT calculation on every invoice, plus quarterly summaries you can review with your accountant.</p>
-                </div>
-                <div class="feature">
-                    <span class="icon">🌐</span>
-                    <h3>Bilingual by design</h3>
-                    <p>Every invoice shows Arabic and English labels side-by-side — ready for Saudi and international clients.</p>
-                </div>
-                <div class="feature">
-                    <span class="icon">📸</span>
-                    <h3>Expense tracking</h3>
-                    <p>Eight categories with color-coded icons, receipt photo capture, and automatic input VAT calculation.</p>
-                </div>
-                <div class="feature">
-                    <span class="icon">🎨</span>
-                    <h3>Professional templates</h3>
-                    <p>Six color themes, signatures, approval blocks, terms & conditions, and custom footers for B2B work.</p>
-                </div>
-                <div class="feature">
-                    <span class="icon">🔒</span>
-                    <h3>Privacy first</h3>
-                    <p>Your data stays on your device. No accounts, no passwords, no servers. Export anytime as PDF or CSV.</p>
-                </div>
+    <!-- Sample receipt: composed entirely in HTML/CSS, no image. -->
+    <aside class="hero__receipt" aria-label="Sample tax invoice">
+        <div class="receipt__head">
+            <div class="receipt__brand">Naqdi&nbsp;Studio</div>
+            <div class="receipt__no">
+                Tax Invoice
+                <strong>NQ-2026-0042</strong>
             </div>
         </div>
-    </section>
-
-    <section class="pricing">
-        <div class="container-wide">
-            <div class="pricing-card">
-                <h3>Free</h3>
-                <div class="price">SAR 0 <small>/ forever</small></div>
-                <ul>
-                    <li>Up to 3 clients</li>
-                    <li>10 invoices per month</li>
-                    <li>Invoice QR codes</li>
-                    <li>Expense tracking</li>
-                    <li>Quarterly VAT summary</li>
-                </ul>
+        <dl class="receipt__meta">
+            <dt>Issued</dt><dd>2026-04-22 · 14:30</dd>
+            <dt>Client</dt><dd>Aurora Labs Co.</dd>
+            <dt>VAT №</dt><dd>3001234567 89012</dd>
+        </dl>
+        <div class="receipt__rows">
+            <div class="receipt__row">
+                <span>Brand identity</span><span>3,200.00</span>
             </div>
-            <div class="pricing-card featured">
-                <h3>Naqdi PRO</h3>
-                <div class="price">SAR 119.99 <small>/ year</small></div>
-                <ul>
-                    <li>Unlimited clients & invoices</li>
-                    <li>6 color themes</li>
-                    <li>Signatures, approval blocks, T&Cs</li>
-                    <li>Profit & Loss, annual summaries</li>
-                    <li>CSV & PDF exports</li>
-                    <li>7-day free trial — cancel anytime</li>
-                </ul>
+            <div class="receipt__row qty">
+                <span>1 × 3,200.00</span><span>SAR</span>
+            </div>
+            <div class="receipt__row">
+                <span>Type system, 6 wts</span><span>1,400.00</span>
+            </div>
+            <div class="receipt__row qty">
+                <span>1 × 1,400.00</span><span>SAR</span>
             </div>
         </div>
-    </section>
+        <hr class="receipt__rule">
+        <div class="receipt__totals">
+            <div class="receipt__row"><span>Subtotal</span><span>4,600.00</span></div>
+            <div class="receipt__row"><span>VAT&nbsp;·&nbsp;15%</span><span>690.00</span></div>
+            <div class="receipt__row grand"><span>Total · SAR</span><span>5,290.00</span></div>
+        </div>
+        <div class="receipt__qr">
+            <svg width="68" height="68" viewBox="0 0 25 25" aria-hidden="true">
+                <rect width="25" height="25" fill="transparent"/>
+                <g fill="currentColor" style="color:var(--ink)">
+                    <path d="M0,0 h7 v7 h-7 z M1,1 v5 h5 v-5 z M2,2 h3 v3 h-3 z"/>
+                    <path d="M18,0 h7 v7 h-7 z M19,1 v5 h5 v-5 z M20,2 h3 v3 h-3 z"/>
+                    <path d="M0,18 h7 v7 h-7 z M1,19 v5 h5 v-5 z M2,20 h3 v3 h-3 z"/>
+                    <path d="M9,1h1v1h-1zM12,1h2v1h-2zM15,1h1v1h-1zM10,3h1v1h-1zM13,3h1v1h-1zM16,3h1v1h-1zM9,5h2v1h-2zM12,5h1v1h-1zM14,5h2v1h-2zM10,7h1v1h-1zM12,7h1v1h-1zM15,7h2v1h-2zM1,9h2v1h-2zM4,9h1v1h-1zM7,9h1v1h-1zM10,9h2v1h-2zM13,9h1v1h-1zM16,9h2v1h-2zM20,9h1v1h-1zM23,9h1v1h-1zM2,10h1v1h-1zM5,10h2v1h-2zM9,10h1v1h-1zM12,10h1v1h-1zM15,10h1v1h-1zM18,10h1v1h-1zM21,10h2v1h-2zM1,12h1v1h-1zM4,12h2v1h-2zM8,12h1v1h-1zM11,12h2v1h-2zM15,12h2v1h-2zM18,12h1v1h-1zM22,12h1v1h-1zM2,14h2v1h-2zM6,14h1v1h-1zM9,14h1v1h-1zM12,14h1v1h-1zM14,14h1v1h-1zM17,14h2v1h-2zM21,14h1v1h-1zM23,14h1v1h-1zM1,16h1v1h-1zM4,16h1v1h-1zM7,16h2v1h-2zM10,16h1v1h-1zM13,16h2v1h-2zM16,16h1v1h-1zM19,16h2v1h-2zM22,16h1v1h-1zM9,18h1v1h-1zM11,18h2v1h-2zM14,18h1v1h-1zM17,18h2v1h-2zM21,18h1v1h-1zM10,20h2v1h-2zM13,20h1v1h-1zM16,20h1v1h-1zM18,20h2v1h-2zM23,20h1v1h-1zM9,22h1v1h-1zM12,22h2v1h-2zM15,22h2v1h-2zM19,22h1v1h-1zM21,22h2v1h-2zM10,24h1v1h-1zM13,24h2v1h-2zM17,24h1v1h-1zM20,24h2v1h-2z"/>
+                </g>
+            </svg>
+            <div>
+                <span class="receipt__qr-tag">Scan-ready QR</span>
+                Includes seller details, VAT №,<br>total, and VAT — generated instantly.
+            </div>
+        </div>
+    </aside>
+</section>
+
+<!-- ── TICKER ─────────────────────────────────────────────────── -->
+<section class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+        <span><span class="dot"></span> Saudi VAT &nbsp;·&nbsp; 15%</span>
+        <span><span class="dot"></span> Scan-ready QR codes</span>
+        <span><span class="dot"></span> No setup required</span>
+        <span><span class="dot"></span> 7-day free trial</span>
+        <span><span class="dot"></span> iPhone · iPad · Mac</span>
+        <span><span class="dot"></span> العربية أولاً</span>
+        <span><span class="dot"></span> Built in Riyadh</span>
+        <!-- duplicated so the marquee loops seamlessly -->
+        <span><span class="dot"></span> Saudi VAT &nbsp;·&nbsp; 15%</span>
+        <span><span class="dot"></span> Scan-ready QR codes</span>
+        <span><span class="dot"></span> No setup required</span>
+        <span><span class="dot"></span> 7-day free trial</span>
+        <span><span class="dot"></span> iPhone · iPad · Mac</span>
+        <span><span class="dot"></span> العربية أولاً</span>
+        <span><span class="dot"></span> Built in Riyadh</span>
+    </div>
+</section>
+
+<!-- ── HOW IT WORKS ───────────────────────────────────────────── -->
+<section id="how" class="steps">
+    <div class="wrap">
+        <span class="section-tag">§ 02 &nbsp;·&nbsp; The workflow</span>
+        <h2 class="section-title">From a blank canvas to a paid&nbsp;invoice in three steps.</h2>
+        <p class="section-sub">No tutorials, no complicated setup. The whole app is built around a simple loop: bill, track, export.</p>
+    </div>
+    <div class="wrap">
+        <div class="steps__grid">
+            <article class="step">
+                <span class="step__num">01</span>
+                <h3 class="step__title">Add your client.</h3>
+                <p class="step__body">Name, VAT number, email — that's it. Naqdi remembers the rest. Whether it's a company or an individual, it's just one simple switch.</p>
+                <span class="step__chip">Bilingual fields</span>
+            </article>
+            <article class="step">
+                <span class="step__num">02</span>
+                <h3 class="step__title">Bill them.</h3>
+                <p class="step__body">Type the items. The VAT, totals, and QR code update right as you type. Pick a color, add your signature, and hit share. Done.</p>
+                <span class="step__chip">PDF · QR · Signature</span>
+            </article>
+            <article class="step">
+                <span class="step__num">03</span>
+                <h3 class="step__title">Track the rest.</h3>
+                <p class="step__body">Snap your receipts, track quarterly VAT on the dashboard, and export to CSV when your accountant needs it. Everything stays securely on your device and syncs via iCloud.</p>
+                <span class="step__chip">iCloud · CSV · Quarterly</span>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ── PRODUCT / SCREENSHOTS ──────────────────────────────────── -->
+<section id="product" class="spread">
+    <div class="wrap">
+        <span class="section-tag">§ 03 &nbsp;·&nbsp; The product</span>
+        <h2 class="section-title">A small app that respects your time.</h2>
+        <p class="section-sub">Six screens, no accounts, no long tutorials. Scroll to see.</p>
+    </div>
+    <div class="spread__strip" aria-label="App screenshots">
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/en/en-01-dashboard.png" alt="Naqdi dashboard showing monthly revenue and recent activity" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">01</span><span class="shot__name">Dashboard</span></figcaption>
+        </figure>
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/en/en-02-invoices-list.png" alt="Invoice list with status filters" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">02</span><span class="shot__name">Invoices</span></figcaption>
+        </figure>
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/en/en-03-invoice-detail.png" alt="Invoice detail screen" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">03</span><span class="shot__name">Invoice detail</span></figcaption>
+        </figure>
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/en/en-04-expenses.png" alt="Expense tracking with categories" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">04</span><span class="shot__name">Expenses</span></figcaption>
+        </figure>
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/en/en-05-clients.png" alt="Client list" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">05</span><span class="shot__name">Clients</span></figcaption>
+        </figure>
+        <figure class="shot">
+            <div class="shot__frame"><img src="screenshots/en/en-06-vat-report.png" alt="Quarterly VAT report" loading="lazy"></div>
+            <figcaption class="shot__caption"><span class="shot__no">06</span><span class="shot__name">VAT report</span></figcaption>
+        </figure>
+    </div>
+    <p class="spread__hint">⟵ &nbsp;Swipe&nbsp;to&nbsp;scroll&nbsp; ⟶</p>
+</section>
+
+<!-- ── LIVE LEDGER (interactive VAT calc) ─────────────────────── -->
+<section id="ledger" class="ledger">
+    <div class="wrap">
+        <span class="section-tag">§ 04 &nbsp;·&nbsp; Try the math</span>
+        <h2 class="section-title">Type a number. Let&nbsp;Naqdi&nbsp;do&nbsp;the&nbsp;math.</h2>
+        <p class="section-sub">15% VAT, instant calculations — just like the app. No complicated math required.</p>
+
+        <div class="ledger__panel" role="group" aria-label="VAT calculator">
+            <div class="ledger__input">
+                <div class="ledger__label">Taxable amount</div>
+                <label class="ledger__field">
+                    <span class="currency">SAR</span>
+                    <input id="ledger-input" type="number" inputmode="decimal" min="0" step="0.01" value="4600" aria-label="Amount in SAR">
+                </label>
+                <p class="ledger__hint">e.g. a brand project, monthly consulting, or a flat fee.</p>
+            </div>
+            <div class="ledger__output" aria-live="polite">
+                <div class="ledger__line"><span>Subtotal</span><span class="val" data-out="subtotal">4,600.00</span></div>
+                <div class="ledger__line is-pulse"><span>VAT · 15%</span><span class="val" data-out="vat">690.00</span></div>
+                <div class="ledger__line total"><span>Total</span><span class="val" data-out="total">5,290.00</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── PRICING ────────────────────────────────────────────────── -->
+<section id="pricing" class="pricing">
+    <div class="wrap">
+        <span class="section-tag">§ 05 &nbsp;·&nbsp; Pricing</span>
+        <h2 class="section-title">Two&nbsp;plans. No&nbsp;surprises.</h2>
+        <p class="section-sub">Start free, forever. When you need more, the upgrade pays for itself with your next invoice.</p>
+
+        <div class="pricing__grid">
+            <article class="plan">
+                <header class="plan__head">
+                    <h3 class="plan__name">Free</h3>
+                    <span class="plan__tag">Forever</span>
+                </header>
+                <div class="plan__price">
+                    <span class="ccy">SAR</span><span class="num">0</span><span class="per">/ forever</span>
+                </div>
+                <p class="plan__sub">A simple start with no commitment.</p>
+                <ul class="plan__items">
+                    <li><span class="qty">×3</span><span>Clients</span><span class="price">incl.</span></li>
+                    <li><span class="qty">×10</span><span>Invoices / month</span><span class="price">incl.</span></li>
+                    <li><span class="qty">∞</span><span>Bilingual PDF + QR</span><span class="price">incl.</span></li>
+                    <li><span class="qty">∞</span><span>Expense tracking</span><span class="price">incl.</span></li>
+                    <li><span class="qty">∞</span><span>Quarterly VAT summary</span><span class="price">incl.</span></li>
+                </ul>
+                <a class="btn btn--ghost" href="https://apps.apple.com/sa/app/naqdi/id6762159386">Get the app</a>
+            </article>
+
+            <article class="plan plan--pro">
+                <header class="plan__head">
+                    <h3 class="plan__name">Naqdi PRO</h3>
+                    <span class="plan__tag">7-day trial</span>
+                </header>
+                <div class="plan__price">
+                    <span class="ccy">SAR</span><span class="num">119</span><span class="per">.99 / year</span>
+                </div>
+                <p class="plan__sub">Less than ten riyals a month.</p>
+                <ul class="plan__items">
+                    <li><span class="qty">∞</span><span>Clients &amp; invoices</span><span class="price">unlimited</span></li>
+                    <li><span class="qty">×6</span><span>Colour themes</span><span class="price">PRO</span></li>
+                    <li><span class="qty">∞</span><span>Signatures, T&amp;Cs, approval blocks</span><span class="price">PRO</span></li>
+                    <li><span class="qty">∞</span><span>Profit &amp; Loss, annual summary</span><span class="price">PRO</span></li>
+                    <li><span class="qty">∞</span><span>CSV exports for accountants</span><span class="price">PRO</span></li>
+                    <li><span class="qty">∞</span><span>iCloud sync across devices</span><span class="price">PRO</span></li>
+                </ul>
+                <a class="btn btn--teal" href="https://apps.apple.com/sa/app/naqdi/id6762159386">Start the 7-day trial</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ── FAQ ────────────────────────────────────────────────────── -->
+<section id="faq" class="faq">
+    <div class="wrap">
+        <span class="section-tag">§ 06 &nbsp;·&nbsp; Questions</span>
+        <h2 class="section-title">The honest answers.</h2>
+
+        <div class="faq__list">
+            <details class="faq__item">
+                <summary><span class="num">01</span><span>Do my invoices include a QR code?</span><span class="plus">+</span></summary>
+                <p>Yes — every invoice you generate carries a QR with the seller name, VAT number, timestamp, total, and VAT amount. It follows the standard format used on Saudi tax invoices, so any invoice scanner will read yours.</p>
+            </details>
+            <details class="faq__item">
+                <summary><span class="num">02</span><span>Where does my data live?</span><span class="plus">+</span></summary>
+                <p>Right on your device, with optional iCloud sync to your private account. Naqdi uses no external servers, requires no accounts, and never sees your invoices. The only data sent are anonymous bug reports to help us improve the app.</p>
+            </details>
+            <details class="faq__item">
+                <summary><span class="num">03</span><span>What if I'm not VAT-registered?</span><span class="plus">+</span></summary>
+                <p>Toggle "VAT registered" off in your business profile. Invoices generate without VAT lines or VAT-specific labels. Everything else — clients, expenses, PDF, history — works identically.</p>
+            </details>
+            <details class="faq__item">
+                <summary><span class="num">04</span><span>iPhone, iPad, and Mac?</span><span class="plus">+</span></summary>
+                <p>One purchase covers all three. iCloud keeps your invoices completely synced across all your devices. And the Mac version is built specifically for macOS, not just a mobile app in a window.</p>
+            </details>
+            <details class="faq__item">
+                <summary><span class="num">05</span><span>Can I cancel any time?</span><span class="plus">+</span></summary>
+                <p>Yes. Subscriptions are managed by Apple — Settings → your name → Subscriptions → Naqdi. Apple honours access through the end of the billing period. You can also export everything as PDF or CSV before you go.</p>
+            </details>
+            <details class="faq__item">
+                <summary><span class="num">06</span><span>Why the paper-like design?</span><span class="plus">+</span></summary>
+                <p>Because invoices are documents at heart. Even on a screen, they should look professional and crafted. Freelancers deserve a tool that matches the quality of their portfolio, not just a boring spreadsheet.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ── CODA ───────────────────────────────────────────────────── -->
+<section class="coda">
+    <h2>The next invoice is your <em>cleanest</em> one yet.</h2>
+    <p>Free on the App Store. Upgrade to PRO when you outgrow the limits.</p>
+    <a href="https://apps.apple.com/sa/app/naqdi/id6762159386" class="btn btn--teal">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M11.182 0.016c.014.109.013.217.002.324-.04.376-.207.725-.502 1.06-.294.335-.723.625-1.174.728-.446.102-.779.059-1.002-.037-.14-.06-.17-.176-.092-.371.126-.316.327-.602.578-.843.25-.24.594-.464.997-.614.4-.15.796-.247 1.19-.247zm.39 3.103c.666.024 1.247.302 1.707.842-1.47.885-1.247 3 .2 3.705-.42 1.153-.984 2.158-1.89 3.217-.505.59-.899.89-1.299.907-.4.017-.675-.132-1.024-.302-.349-.17-.725-.34-1.175-.34-.45 0-.837.17-1.187.349-.35.18-.621.327-1.009.302-.417-.025-.826-.307-1.354-.864C3.515 9.88 2.82 8.16 2.82 6.5c0-1.99 1.253-3.03 2.493-3.048.53-.009 1.03.157 1.474.313.444.155.831.302 1.123.302.293 0 .68-.147 1.125-.302.444-.156.944-.322 1.474-.313z"/></svg>
+        Download Naqdi
+    </a>
+</section>
+
 </main>
 
-<footer>
-    <a href="support.html">Support</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms-of-use.html">Terms of Use</a>
-    <a href="mailto:NaqdiAppFeedback@gmail.com">Contact</a>
-    <div style="margin-top: 20px; font-size: 12px;">
-        © 2026 Naqdi. Made for Saudi freelancers, in Saudi Arabia. 🇸🇦
+<footer class="site">
+    <div class="row">
+        <div class="mark">نقدي · Naqdi</div>
+        <nav>
+            <a href="support.html">Support</a>
+            <a href="privacy-policy.html">Privacy</a>
+            <a href="terms-of-use.html">Terms</a>
+            <a href="mailto:NaqdiAppFeedback@gmail.com">Contact</a>
+            <a href="index-ar.html">العربية</a>
+        </nav>
+    </div>
+    <div class="fine">
+        <span>© 2026 Naqdi · Made in Saudi Arabia</span>
+        <span>v1.2 · Apr 2026</span>
     </div>
 </footer>
+
+<script>
+/* Live VAT ledger */
+(function () {
+    const input = document.getElementById('ledger-input');
+    if (!input) return;
+    const fmt = new Intl.NumberFormat('en-US', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    });
+    const out = {
+        subtotal: document.querySelector('[data-out="subtotal"]'),
+        vat:      document.querySelector('[data-out="vat"]'),
+        total:    document.querySelector('[data-out="total"]')
+    };
+    let prev = '';
+    function recalc() {
+        const v = parseFloat(input.value);
+        const sub = isFinite(v) && v > 0 ? v : 0;
+        const vat = sub * 0.15;
+        const tot = sub + vat;
+        const next = fmt.format(tot);
+        out.subtotal.textContent = fmt.format(sub);
+        out.vat.textContent      = fmt.format(vat);
+        out.total.textContent    = next;
+        if (next !== prev) {
+            const totalLine = out.total.parentElement;
+            totalLine.style.transition = 'none';
+            totalLine.style.color = 'var(--teal)';
+            requestAnimationFrame(() => {
+                totalLine.style.transition = 'color .8s ease';
+                totalLine.style.color = '';
+            });
+            prev = next;
+        }
+    }
+    input.addEventListener('input', recalc);
+    recalc();
+})();
+</script>
 
 </body>
 </html>
